@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>2. 함수</title>
+    <script src ="./lib/calc.js"></script> <!-- 외부 자바스크립트 -->
+
+
+
+</head>
+<body>
+    
+    <h3>함수</h3>
+    <script>
+
+        // 선언함수
+        function f1(x){
+
+            let y = 2*x +3;
+            
+            return y;
+
+        }
+
+        let y1 = f1(1);
+        let y2 = f1(2);
+        let y3 = f1(3);
+
+        document.write('y1: ' + y1 + '<br>');
+        document.write('y2: ' + y2 + '<br>');
+        document.write('y3: ' + y3 + '<br>');
+
+
+
+        // 익명함수
+        const f2 = function(x,y){
+            return x+y;
+        };
+
+        let r1 = f2(1,2);
+        let r2 = f2(2,3);
+        let r3 = f2(2,-1);
+
+        document.write(r1+'<br>');
+        document.write(r2+'<br>');
+        document.write(r3+'<br>');
+
+
+        // 화살표 함수
+        const f3 = (x,y) => {
+            return x+y;
+        };
+
+        const f4 = (x,y) => x-y;
+
+        let rs1 = f3(1,2);
+        let rs2 = f3(2,4);
+        let rs3 = f3(1,2);
+        let rs4 = f3(3,2);
+
+        document.write(rs1+'<br>');
+        document.write(rs2+'<br>');
+        document.write(rs3+'<br>');
+        document.write(rs4+'<br>');
+
+
+
+        // 외부 함수 호출
+        let res1 = plus(1,2);
+        let res2 = minus(1,2);
+        let res3 = multi(1,2);
+        let res4 = div(1,2);
+
+
+        
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

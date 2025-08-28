@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문</title>
+</head>
+<body>
+    
+<h3>반복문</h3>
+
+<h4>for</h4>
+<script>
+    // for
+    for(let i=1; i<=5; i++){
+        document.write('i: '+i+'</br>');
+    }
+
+    // 1부터 10까지 합
+    let sum=0;
+    for(let k=1;k<=10;k++){
+        sum+=k;
+    }
+    document.write('<p>1부터 10까지 합:' + sum + ' </p>');
+
+    // 별삼각형
+    for(let a =1; a<=10;a++){
+        for(let b=1; b<=a ; b++){
+            document.write('⭐');
+        }
+        document.write('<br>');
+    }
+
+
+</script>
+
+
+<table border="1">
+<tr>
+    <th>2단</th>
+    <th>3단</th>
+    <th>4단</th>
+    <th>5단</th>
+    <th>6단</th>
+    <th>7단</th>
+    <th>8단</th>
+    <th>9단</th>
+</tr>
+<script>
+    for(let x=1; x<=9; x++){
+
+        document.write('<tr>');
+        for(let y=2; y<=9 ; y++){
+            document.write('<td>'+ y + ' x ' + x + ' = ' + x*y + '</td>');
+
+        }
+
+
+        document.write('</tr>');
+    }
+
+</script>
+
+
+</table>
+
+
+
+
+
+
+</body>
+</html>
